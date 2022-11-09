@@ -331,6 +331,8 @@
     color:var(--light-color);
     font-size: 1.5rem;
  }
+
+
  
  .contact form{
     border-radius: .5rem;
@@ -338,6 +340,7 @@
     padding:2rem;
     margin:0 auto;
     max-width: 50rem;
+    
  }
  
  .contact form .message{
@@ -360,11 +363,19 @@
     font-size: 1.7rem;
     color:var(--black);
     text-transform: none;
+    
  }
  
  .contact form span{
     font-size: 1.7rem;
     color:var(--black);
+    
+ }
+
+ .contact label{
+    font-size: 1.7rem;
+    color:var(--black);
+    
  }
  
  .footer{

@@ -264,15 +264,15 @@
     <section class="contact" id="contact">
 
         <h1 class="heading">make appointment</h1>
-
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
-             <!--<?php 
+        
+        <!--<form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+             <?php 
          if(isset($message)){
             foreach($message as $message){
                echo '<p class="message">'.$message.'</p>';
             }
          }
-      ?> -->
+      ?> 
             <span>your name :</span>
             <input type="text" name="name" placeholder="enter your name" class="box" required>
             <span>your email :</span>
@@ -281,8 +281,21 @@
             <input type="number" name="number" placeholder="enter your number" class="box" required>
             <span>appointment date :</span>
             <input type="datetime-local" name="date" class="box" required>
-            <input type="submit" value="make appointment" name="submit" class="link-btn">
-        </form>
+            <input type="submit" value="make appointment" name="submit" class="link-btn"> -->
+            <form name="contact" method="POST" data-netlify="true">
+                <p>
+                  <label>Your Name: <input type="text" name="name" class="box"/></label>
+                </p>
+                <p>
+                  <label>Your Email: <input type="email" name="email" class="box"/></label>
+                </p>
+                <p>
+                  <label>Message: <textarea name="message" class="box"></textarea></label>
+                </p>
+                <p>
+                  <button type="submit" class="link-btn">Send</button>
+                </p>
+              </form>
 
     </section>
 
